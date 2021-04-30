@@ -21,8 +21,19 @@ a:hover{
 section{
   padding: 0 20px;
   max-width: 1120px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
+section:not(:last-child){
+  margin-bottom: 60px;
+}
+.glay-bg{
+  background-color: #f0f0f0;
+  padding: 60px 0;
+}
+.glay-bg:not(:last-of-type){
+  margin-bottom: 60px;
+}
+
 h2{
   font-size: 2em;
   line-height: 1.75;
@@ -38,6 +49,15 @@ h3{
 .flex-bg{
   display: flex;
   justify-content: space-between;
+}
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+  transition: all 2000ms; /* フェードインにかかる時間を指定 */
+}
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 /*bace*/
 
@@ -136,11 +156,6 @@ header{
 /*profile*/
 
 /*service*/
-.glay-bg{
-  background-color: #f0f0f0;
-  margin-bottom: 60px;
-  padding: 60px 0;
-}
 #service{
   margin-bottom: 0;
 }
@@ -159,6 +174,7 @@ header{
 /*works*/
 .works-list li{
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .works-list li:not(:last-child){
@@ -191,6 +207,23 @@ header{
   margin-bottom: 20px;
 }
 /*works*/
+
+/*contact*/
+#contact p{
+  text-align: center;
+  margin-bottom: 50px;  
+}
+#contact a{
+  display: block;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 15px 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+/*contact*/
 
 /*footer*/
 .footer{
