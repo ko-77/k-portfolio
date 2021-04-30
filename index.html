@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-wrapper">
+      <h1 class="site-title">KOUSEI-Portfolio</h1>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#profile">Profile</a></li>
+          <li class="nav-item"><a href="#service">Service</a></li>
+          <li class="nav-item"><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+      <button class="burger-btn">
+        <span class="bars">
+          <sapn class="bar bar-top"></sapn>
+          <sapn class="bar bar-mid"></sapn>
+          <sapn class="bar bar-bottom"></sapn>
+        </span>
+      </button>
+      <span class="burger-musk"></span>
+    </div>
+  </header>
+  <main>
+
+    <div class="fv">
+      <p class="main-copy">Welcome To My Portfolio</p>
+    </div>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <ul class="profile-list">
+        <li class="profile-item">
+          <p>NAME</p>
+          <p>新岡 洸星</p>
+        </li>
+        <li class="profile-item">
+          <p>AGE</p>
+          <p>21歳</p>
+        </li>
+      </ul>
+      <p>
+        2020年６月よりプログラミング学習を開始。現在はweb制作フリーランスをしています。<br>
+        お客様のご要望にお答えできるよう、迅速、丁寧に対応いたします。
+      </p>
+    </section>
+
+    <div class="glay-bg">
+      <section id="service">
+          <h2>Service</h2>
+          <div class="service-contents flex-bg">
+            <div class="service-item">
+              <div class="service-img">
+                <img src="./img/coding-icon.jpg" alt="">
+              </div>
+              <h3>CODING</h3>
+              <p>デザインデータをもとにコーディングを行い、HPを制作します。<br>
+                また、スマホやタブレットなどでの閲覧にも対応しています。</p>
+            </div>
+            <div class="service-item">
+              <div class="service-img">
+                <img src="./img/skills-icon.jpg" alt="">
+              </div>
+              <h3>SKILLS</h3>
+              <p>HTML CSS,jQueryを使ったコーディング,wordpressでの製作が可能です</p>
+            </div>
+            <div class="service-item">
+              <div class="service-img">
+                <img src="./img/maintenance-icon.jpg" alt="">
+              </div>
+              <h3>MAINTENANCE</h3>
+              <p>古くなったサイトの更新や写真,文章の変更などを承ります。</p>
+            </div>
+          </div>
+      </section>
+    </div>
+
+
+    <section id="works">
+        <h2>Works</h2>
+        <ul class="works-list">
+          <li>
+            <div class="works-img"><img src="./img/shogo-img.jpg"></div>
+            <div class="works-content">
+              <h3>shogo-log　中級編模写</h3>
+              <p>
+                XDデザインよりコーディングを行いました。 <br>
+                よくある質問のアコーディオンはデフォルトで1つ目が開いている状態にしています。<br>
+                また試作実績のスライダーはswiper（jsプラグイン）を使用しており、各々の要素もAOS.jsを用意てふわっと実装するように自走しています。
+              </p>
+              <a href="https://ko-77.github.io/k-portfolio01/">サイトを見る</a>
+            </div>
+          </li>
+          <li>
+            <div class="works-img"><img src="./img/cresta-img.jpg"></div>
+            <div class="works-content">
+              <h3>crestadesign 上級編模写</h3>
+              <p></p>
+              <a href="https://ko-77.github.io/k-portfolio/">サイトを見る</a>
+            </div>
+          </li>
+          <li>
+            <div class="works-img"><img src="./img/deitora.png"></div>
+            <div class="works-content">
+              <h3>deitora 卒業制作</h3>
+              <p>XDデザインよりコーディングを行っております。 <br>
+                キャスト、ストーリー、コメント一覧にはカスタムフィールドでクライアント様からも変更しやすくしております。<br>
+                また、TOPページのキャスト、コメント部分には上位３件が表示されるようにしております。<br>
+                お問合せフォームでは自動返信メールの設定なども行っております。<br>
+                ユーザー名：portfolio<br>パスワード：Password
+              </p>
+              <a href="http://deitora-portfolio.com/">サイトを見る</a>
+            </div>
+          </li>
+        </ul>
+    </section>
+  </main>
+
+  <footer class="footer glay-bg">
+    <small>- 2020 KOUSEI-Portfolio -</small>
+  </footer>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
