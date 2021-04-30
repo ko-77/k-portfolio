@@ -159,6 +159,9 @@ header{
 #service{
   margin-bottom: 0;
 }
+.service-contents{
+  margin-bottom: 50px;
+}
 .service-item{
   width: 30%;
   padding: 20px 10px;
@@ -168,6 +171,18 @@ header{
 .service-img{
   width: 100px;
   margin: 0 auto 20px;
+}
+.price-list{
+  max-width: 500px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between
+}
+.price-list li p{
+  margin-bottom: 15px;
+}
+.price-contents{
+  text-align: center;
 }
 /*service*/
 
@@ -401,4 +416,13 @@ small{
   margin-left: 0;
 }
 /*works*/
+}
+
+@media (max-width:550px) {
+  .price-list{
+    flex-direction: column;
+  }
+  .price-contents>p{
+    text-align: left;
+  }
 }
