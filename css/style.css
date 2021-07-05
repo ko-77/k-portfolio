@@ -144,6 +144,19 @@ header{
 /*fv*/
 
 /*profile*/
+.profile-inner{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.profile-img{
+  max-width: 350px;
+  min-width: 250px;
+}
+.profile-list{
+  max-width: 600px;
+  margin-right: 30px;
+}
 .profile-item{
   margin-bottom: 30px;
 }
@@ -379,6 +392,20 @@ small{
     font-size: 45px;
   }
   /*fv*/
+  
+  /*profile*/
+  .profile-inner{
+    display: block;
+  }
+  .profile-img{
+    min-width: 0px;
+    max-width: 80%;
+    margin: 0 auto 30px;
+  }
+  .profile-list{
+    margin-right: 0;
+  }
+  /*profile*/
 
   /*service*/
   .service-item{
